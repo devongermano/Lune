@@ -12,7 +12,7 @@ namespace src.Util
 		public static TimeManager instance;
 		
 		private System.Timers.Timer mTimer = new System.Timers.Timer();
-		private List<ITimeListener> _mTimeListeners = new List<ITimeListener>();
+		private List<ITimeListener> mTimeListeners = new List<ITimeListener>();
 	
 		public static int currentTimeHours;
 		public static int currentTimeMinutes;
@@ -36,12 +36,11 @@ namespace src.Util
 		private void onTimeUpdate(object source, ElapsedEventArgs e)
 		{
 			incrementTime();
-			Debug.Log("ON TIME UPDATE");
 		}
 		
 		private void incrementTime()
 		{
-			if (currentTimeMinutes < 60)
+			if (currentTimeMinutes < 59)
 			{
 				currentTimeMinutes++;
 			} else
@@ -50,16 +49,16 @@ namespace src.Util
 				currentTimeMinutes = 0;
 			}
 			
-			_mTimeListeners.ForEach(listener => listener.onTimeUpdate(currentTimeHours, currentTimeMinutes));
+			mTimeListeners.ForEach(listener => listener.onTimeUpdate(currentTimeHours, currentTimeMinutes));
 		}
 		
 		public void registerTimeListener(ITimeListener listener) {
-			_mTimeListeners.Add(listener);
+			mTimeListeners.Add(listener);
 		}
 
 		public void deregisterTimeListener(ITimeListener listener)
 		{
-			_mTimeListeners.Remove(listener);
+			mTimeListeners.Remove(listener);
 		}
 	}
 
