@@ -8,23 +8,15 @@ namespace src.Util
 {
 	public class TimeManager : MonoBehaviour
 	{
-		
-		public static TimeManager instance = null;
+
+		public static TimeManager instance;
 		
 		private System.Timers.Timer mTimer = new System.Timers.Timer();
-		private ITimeListener _mTimeListener;
+		private List<ITimeListener> _mTimeListeners = new List<ITimeListener>();
 	
 		public static int currentTimeHours;
 		public static int currentTimeMinutes;
 	
-	//	public TimeManager(ITimeListener timeListener)
-	//	{
-		//	_mTimeListener = timeListener;
-			
-			/* Setup the timer listener */
-		//	mTimer.Elapsed += new ElapsedEventHandler(onTimeUpdate);
-		//}
-
 		private void Awake()
 		{
 			if (instance == null)
@@ -35,11 +27,16 @@ namespace src.Util
 				Destroy(gameObject);
 			}
 			DontDestroyOnLoad(gameObject);
+			
+			mTimer.Elapsed += new ElapsedEventHandler(onTimeUpdate);
+			mTimer.Interval = 1000;
+			mTimer.Enabled = true;
 		}	
 		
 		private void onTimeUpdate(object source, ElapsedEventArgs e)
 		{
 			incrementTime();
+			Debug.Log("ON TIME UPDATE");
 		}
 		
 		private void incrementTime()
@@ -47,10 +44,22 @@ namespace src.Util
 			if (currentTimeMinutes < 60)
 			{
 				currentTimeMinutes++;
-				return;
+			} else
+			{
+				currentTimeHours++;
+				currentTimeMinutes = 0;
 			}
-			currentTimeHours++;
-			currentTimeMinutes = 0;	
+			
+			_mTimeListeners.ForEach(listener => listener.onTimeUpdate(currentTimeHours, currentTimeMinutes));
+		}
+		
+		public void registerTimeListener(ITimeListener listener) {
+			_mTimeListeners.Add(listener);
+		}
+
+		public void deregisterTimeListener(ITimeListener listener)
+		{
+			_mTimeListeners.Remove(listener);
 		}
 	}
 
