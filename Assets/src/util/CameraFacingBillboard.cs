@@ -18,12 +18,6 @@ public class CameraFacingBillboard : MonoBehaviour {
 			mCamera = Camera.main;
 			mActive = true;
 		}
- 
-		//go = new GameObject();
-		
-		//go.name = transform.gameObject.name;
-		//go.transform.position = transform.position;
-		//transform.parent = go.transform;
 	}
 
 	private void Update() {

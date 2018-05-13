@@ -60,6 +60,16 @@ namespace src.Util
 		{
 			mTimeListeners.Remove(listener);
 		}
+
+		public void stopTime()
+		{
+			mTimer.Enabled = false;
+		}
+
+		public void startTime()
+		{
+			mTimer.Enabled = true;
+		}
 	}
 
 	public interface ITimeListener

@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using src.Util;
+﻿using src.Util;
 using UnityEngine;
-using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class ClockUI : MonoBehaviour, ITimeListener
