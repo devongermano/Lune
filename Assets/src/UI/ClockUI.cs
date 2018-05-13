@@ -7,6 +7,9 @@ public class ClockUI : MonoBehaviour, ITimeListener
 	private int mHours;
 	private int mMinutes;
 
+	private int renderedHours;
+	private int renderedMinutes;
+
 	private Text mText;
 	
 	private void Start()
@@ -16,14 +19,14 @@ public class ClockUI : MonoBehaviour, ITimeListener
 		mText = gameObject.GetComponent<Text>();
 	}
 
-	private void Update()
-	{
-		mText.text = mHours + ":" + mMinutes;
-	}
-
 	public void onTimeUpdate(int hours, int minutes)
 	{
 		mHours = hours;
 		mMinutes = minutes;
+		
+		ThreadManager.instance.Queue(() =>
+		{
+			mText.text = mHours + ":" + mMinutes;
+		});
 	}
 }

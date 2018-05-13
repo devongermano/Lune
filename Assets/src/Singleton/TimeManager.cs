@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.VR.WSA.Input;
 
 namespace src.Util
-{
+{	
 	public class TimeManager : MonoBehaviour
 	{
 
@@ -69,6 +69,11 @@ namespace src.Util
 		public void startTime()
 		{
 			mTimer.Enabled = true;
+		}
+
+		private void OnDestroy()
+		{
+			instance = null;
 		}
 	}
 
