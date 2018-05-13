@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45e181b6-36a9-45c6-b32c-5b6ef6103c3c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/src/Singleton/TimeManager.cs" afterPath="$PROJECT_DIR$/Assets/src/Singleton/TimeManager.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scenes/Test/SceneTestInteraction.unity" afterPath="$PROJECT_DIR$/Assets/Scenes/Test/SceneTestInteraction.unity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/src/UI/ClockUI.cs" afterPath="$PROJECT_DIR$/Assets/src/UI/ClockUI.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,26 +78,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClockUI.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClockUI.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/src/UI/ClockUI.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
               <folding>
-                <marker date="1526245043708" expanded="true" signature="6:124" ph="..." />
-                <marker date="1526245043708" expanded="true" signature="177:476" ph="{...}" />
-                <marker date="1526245043708" expanded="true" signature="247:304" ph="{...}" />
-                <marker date="1526245043708" expanded="true" signature="355:474" ph="{...}" />
+                <marker date="1526246198809" expanded="true" signature="6:146" ph="..." />
+                <marker date="1526246198809" expanded="true" signature="199:561" ph="{...}" />
+                <marker date="1526246198809" expanded="true" signature="291:392" ph="{...}" />
+                <marker date="1526246198809" expanded="true" signature="416:462" ph="{...}" />
+                <marker date="1526246198809" expanded="true" signature="513:559" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeManager.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TimeManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/src/Singleton/TimeManager.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+              <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <marker date="1526245565627" expanded="false" signature="6:131" ph="..." />
                 <marker date="1526245565627" expanded="true" signature="151:1428" ph="{...}" />
@@ -145,8 +148,8 @@
         <option value="$PROJECT_DIR$/Assets/src/Util/TimeManager.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Util/Loader.cs" />
         <option value="$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8CDD91C3-618B-427B-905E-B298374EEE86/23/c8056180/List`1.cs" />
-        <option value="$PROJECT_DIR$/Assets/src/UI/ClockUI.cs" />
         <option value="$PROJECT_DIR$/Assets/src/Singleton/TimeManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/src/UI/ClockUI.cs" />
       </list>
     </option>
   </component>
@@ -288,12 +291,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1526160173206</updated>
-      <workItem from="1526160175654" duration="13325000" />
+      <workItem from="1526160175654" duration="13868000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13325000" />
+    <option name="totallyTimeSpent" value="13868000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -470,23 +473,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/src/UI/ClockUI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1526245043708" expanded="true" signature="6:124" ph="..." />
-            <marker date="1526245043708" expanded="true" signature="177:476" ph="{...}" />
-            <marker date="1526245043708" expanded="true" signature="247:304" ph="{...}" />
-            <marker date="1526245043708" expanded="true" signature="355:474" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/src/Singleton/TimeManager.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <caret line="22" column="32" lean-forward="false" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
           <folding>
             <marker date="1526245565627" expanded="false" signature="6:131" ph="..." />
             <marker date="1526245565627" expanded="true" signature="151:1428" ph="{...}" />
@@ -500,6 +490,20 @@
             <marker date="1526245565627" expanded="true" signature="1195:1233" ph="{...}" />
             <marker date="1526245565627" expanded="true" signature="1295:1339" ph="{...}" />
             <marker date="1526245565627" expanded="true" signature="1375:1426" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/src/UI/ClockUI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1526246198809" expanded="true" signature="6:146" ph="..." />
+            <marker date="1526246198809" expanded="true" signature="199:561" ph="{...}" />
+            <marker date="1526246198809" expanded="true" signature="291:392" ph="{...}" />
+            <marker date="1526246198809" expanded="true" signature="416:462" ph="{...}" />
+            <marker date="1526246198809" expanded="true" signature="513:559" ph="{...}" />
           </folding>
         </state>
       </provider>
